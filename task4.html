@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            margin: 10px;
+            padding: 10px;
+            /* display: block; */
+            position: absolute;
+            top: 200px;
+            left: 600px;
+        }
+        input{
+            margin-left: 10px;
+            float: right;
+        }
+        select{
+            margin-left:45px;
+        }
+        #save{
+            margin-left: 0px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <label for="name">Fullname : </label>
+            <input type="text" id="name">
+            <br>
+            <br>
+            <label for="username">Username : </label>
+            <input type="text" id="username">
+            <br>
+            <br>
+            <label for="pass">Password : </label>
+            <input type="password" name="pass" id="pass">
+            <br>
+            <br>
+            <label for="repass">Re-Password : </label>
+            <input type="password" name="pass" id="repass">
+            <br>
+            <br>
+            <label for="Adress">Adress : </label>
+            <input type="text" id="Adress">
+            <br>
+            <br>
+            <label for="age">Age :</label>
+            <input type="text" id="age">
+            <br>
+            <br>
+            <label for="gender">Gender :</label>
+            <select name="gender" id="gender">
+                <option value="male">male</option>
+                <option value="Female">Female</option>
+                <option value="other">other</option>
+            </select>
+            <br>
+            <br>
+            <input type="button" value="Save" id="save">
+        </form>
+    </div>
+</body>
+</html>
