@@ -1,68 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        /* Style for the partially hidden navigation bar container */
-        .navbar {
-            margin-top: 50px;
-            height: 100%;
-            width: 50px; /* Initial width, partially hidden */
-            background-color: rgb(251, 255, 255); /* Dark background color */
-            position: fixed;
-            top: 0;
-            left: 0; /* Initially visible on the left side */
-            overflow-x: hidden;
-            transition: 0.2s; /* Smooth transition on hover */
-            font-size: larger;
-        }
+    <title>Css_task4</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.2s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
 
-        /* Style for the navigation links */
-        .navbar a {
-            padding: 15px 0;
-            text-decoration: none;
-            font-size: 18px;
-            color: white; /* Default text color */
-            display: block;
-            text-align: center;
-        }
+#mySidenav a:hover {
+  left: 0;
+}
 
-        /* Style for the home link */
-        .navbar a:first-child {
-            background-color: green; /* Green background color */
-        }
+#about {
+  top: 20px;
+  background-color: #02744a;
+}
 
-        /* Style for the "About Us" link */
-        .navbar a:nth-child(2) {
-            background-color: blue; /* Blue background color */
-        }
+#blog {
+  top: 80px;
+  background-color: #1c7ac7;
+}
 
-        /* Style for the "Contact Us" and "Know More" links */
-        .navbar a:nth-child(3)  {
-            background-color: red; /* Red background color */
-        }
-        .navbar a:nth-child(4){
-            background-color:grey;
-        }
+#projects {
+  top: 140px;
+  background-color: #c9382d;
+}
 
-        /* Hover effect */
-        .navbar:hover {
-            width: 100px; /* Reveal half of it on hover */
-        }
-
-        /* Hover effect for individual links */
-        .navbar a:hover {
-            background-color: #555; /* Darker background color on hover */
-        }
-    </style>
+#contact {
+  top: 200px;
+  background-color: #555
+}
+</style>
 </head>
 <body>
 
-<div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#contact">Contact Us</a>
-    <a href="#more">Know More</a>
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="about">About</a>
+  <a href="#" id="blog">Blog</a>
+  <a href="#" id="projects">Projects</a>
+  <a href="#" id="contact">Contact</a>
 </div>
 
+<div style="margin-left:80px;">
+  <h2>Hoverable Sidenav Buttons</h2>
+  <p>Hover over the buttons in the left side navigation to open them.</p>
+</div>
+   
 </body>
-</html>
+</html> 
